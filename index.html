@@ -7,100 +7,129 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: #f5f5f5;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
     }
     header {
-      background: #222;
-      color: #fff;
-      padding: 30px 20px;
+      background-color: #1e1e1e;
+      color: white;
       text-align: center;
-      animation: fadeIn 1.5s ease-in-out;
+      padding: 40px 20px;
     }
     header img {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #fff;
+      border: 4px solid white;
       margin-bottom: 10px;
-      animation: zoomIn 1s ease-in-out;
     }
     .container {
       max-width: 900px;
-      margin: auto;
+      margin: 30px auto;
       padding: 20px;
-      background: #fff;
-      animation: slideUp 1s ease-in-out;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h1, h2 {
-      color: #444;
-    }
-    .section {
-      margin-bottom: 30px;
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      color: #333;
     }
     ul {
       padding-left: 20px;
     }
-    .contact {
-      margin-top: 10px;
-      font-size: 0.95em;
-    }
-    .skills span {
-      display: inline-block;
-      background: #e3e3e3;
-      padding: 5px 10px;
-      margin: 5px;
-      border-radius: 5px;
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
     }
     footer {
       text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      background: #222;
-      color: #ccc;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      padding: 20px;
+      background-color: #1e1e1e;
+      color: white;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <!-- ✅ Your Uploaded Image -->
+    <!-- Replace with your actual image path or filename -->
     <img src="Image.HEIC" alt="Naveen's Photo">
     <h1>Naveen Kumar</h1>
-    <p>DevOps Engineer | 4 Years Experience</p>
-    <div class="contact">
-      📧 <a href="mailto:navisingh2100@gmail.com" style="color:#ccc;">navisingh2100@gmail.com</a> |
-      📞 7229960539 |
-      🔗 <a href="https://www.linkedin.com/in/naveen-kumar-150218189/" target="_blank" style="color:#ccc;">LinkedIn</a>
-    </div>
+    <p>📧 navisingh2100@gmail.com | 📞 7229960539 | <a href="https://www.linkedin.com/in/naveen-kumar-150218189/" style="color:#ccc;" target="_blank">LinkedIn</a></p>
   </header>
 
   <div class="container">
-    <!-- Keep rest of the sections same (as in previous code) -->
-    <!-- Summary, Skills, Experience, Education, Certifications, Project -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p>DevOps Engineer with 4 years of experience in automating CI/CD pipelines, managing cloud infrastructure, and deploying scalable microservices on AWS. Proficient in tools like Jenkins, Docker, Kubernetes, Terraform, Ansible and monitoring solutions like Datadog, CloudWatch, and Splunk. Strong scripting in Python and Shell. Certified by AWS and Google with hands-on experience building production-ready systems.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p><strong>Plan and Collaborate:</strong> Jira, Confluence, Agile/Scrum, GitOps</p>
+      <p><strong>Version Control & Scripting:</strong> Python, Shell, Finacle Scripting, YAML, Git, GitHub, GitLab</p>
+      <p><strong>CI/CD & Automation:</strong> GitLab CI/CD, Jenkins, GitHub Actions, Terraform, Ansible</p>
+      <p><strong>Testing:</strong> JMeter, Postman</p>
+      <p><strong>Deployment:</strong> Docker, Kubernetes, Helm, AWS (EC2, EKS, Lambda, S3, ECR, VPC, RDS)</p>
+      <p><strong>Monitoring:</strong> Datadog, CloudWatch, ELK, Splunk</p>
+      <p><strong>Soft Skills:</strong> Teamwork, Problem Solving, Communication, Adaptability, Quick Learner</p>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <h3>Senior Systems Engineer – Infosys (Jan 2023 – Present)</h3>
+      <ul>
+        <li>Built CI/CD pipelines with GitLab CI and Canary deployments, improving release reliability by 30%.</li>
+        <li>Managed Kubernetes-based microservices, reducing provisioning time by 40%.</li>
+        <li>Automated infrastructure with Ansible, Python, Terraform.</li>
+        <li>Integrated Datadog and CloudWatch for full-stack monitoring, reducing MTTR by 35%.</li>
+        <li>Handled critical production alerts and performed root-cause analysis within SLA.</li>
+      </ul>
+      <h3>Systems Engineer – Infosys (June 2021 – Jan 2023)</h3>
+      <ul>
+        <li>Automated daily Finacle banking tasks using Shell scripts, reducing manual effort by 60%.</li>
+        <li>Used JMeter in UAT to fix bottlenecks, improving performance by 25%.</li>
+        <li>Integrated Finacle APIs into CI workflows.</li>
+        <li>Built idempotency logic for batch jobs, improving reliability.</li>
+        <li>Monitored APIs and jobs using Datadog, CloudWatch, and Splunk.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>B.Tech in Electronics & Communication</strong><br>Bhagwan Parshuram Institute of Technology, Rohini, New Delhi (2016–2020)</p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified SysOps Administrator – Associate</li>
+        <li>Certified Kubernetes Administrator (CKA)</li>
+        <li>Google Cloud Digital Leader</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Personal Project: CI/CD for Django Blog App</h2>
+      <ul>
+        <li>Built Django blog app, containerized with Docker and deployed on AWS EC2</li>
+        <li>Implemented CI/CD with Jenkins (test, build, deploy)</li>
+        <li>Built & pushed Docker images to AWS ECR</li>
+        <li>Provisioned EC2 + security groups with Terraform</li>
+        <li>Used GitHub Secrets and AWS IAM for secure deploys</li>
+        <li>Monitored uptime using CloudWatch, enabled versioned rollbacks via Docker tags</li>
+      </ul>
+    </section>
   </div>
 
   <footer>
-    &copy; 2025 Naveen Kumar — DevOps Engineer Portfolio
+    &copy; 2025 Naveen Kumar | DevOps Portfolio
   </footer>
+
 </body>
 </html>
 
